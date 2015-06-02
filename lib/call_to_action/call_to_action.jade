@@ -1,0 +1,10 @@
+template(name="CallToAction")
+  am-CallToAction
+    h2(data-bind="text: title")
+    p(data-bind="text:message")
+    if shouldGroupButtons
+      .uk-button-group
+        each buttons
+          +UIButton
+    else
+     +UIButton button
