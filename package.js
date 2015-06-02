@@ -38,8 +38,6 @@ Package.onUse(function(api) {
     api.addFiles('lib/' + molecules[i] +'/'+ molecules[i] + '.js');
     api.addFiles('lib/' + molecules[i] +'/'+ molecules[i] + '.styl', 'client');
   }
-  api.imply('convertify:core');
-  api.imply('convertify:collections');
   api.export('Molecule');
 });
 
