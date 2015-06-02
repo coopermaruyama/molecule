@@ -15,8 +15,8 @@ Package.onUse(function(api) {
   api.addFiles('molecule.js');
   api.use([
     'underscore',
-    'mquandalle:jade',
-    'manuel:viewmodel',
+    'mquandalle:jade@0.4.3',
+    'manuel:viewmodel@1.7.4',
     'stylus'
   ]);
   api.use(['templating'], 'client');
