@@ -24,6 +24,7 @@ Template.myTemplate.helpers({
   }
 });
 ```
+# Using Molecules
 
 Molecules can be used with each other and can behave differently if so. For 
 example to make a call to action:
