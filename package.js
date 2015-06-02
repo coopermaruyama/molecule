@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'A framework of reactive UI components that have a model layer, are reusable, can inherit from each other, and become completely different objects when combined.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/coopermaruyama/molecule',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
