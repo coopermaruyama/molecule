@@ -2,7 +2,7 @@ Package.describe({
   name: 'cooperm:molecule',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: 'A framework of reactive UI components that have a model layer, are reusable, can inherit from each other, and become completely different objects when combined.',
+  summary: 'A framework of reactive UI components.',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/coopermaruyama/molecule',
   // By default, Meteor will default to using README.md for documentation.
