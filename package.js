@@ -26,9 +26,11 @@ Package.onUse(function(api) {
   //
   // Assuming a molecule is called "molecule", the following must exist:
   //  lib/
-  //    molecule.jade
-  //    molecule.js
-  //    molecules.styl
+  //    my_molecule/
+  //      molecule.jade
+  //      molecule.js
+  //      molecules.styl
+  //
   var molecules = [
     'button',
     'call_to_action'
@@ -36,8 +38,9 @@ Package.onUse(function(api) {
   for (var i = 0; i < molecules.length; i++) {
     api.addFiles('lib/' + molecules[i] +'/'+ molecules[i] + '.jade', 'client');
     api.addFiles('lib/' + molecules[i] +'/'+ molecules[i] + '.js');
-    api.addFiles('lib/' + molecules[i] +'/'+ molecules[i] + '.styl', 'client');
+    api.addFiles('lib/' + molecules[i] +'/'+ molecules[i] + '.import.styl', 'web');
   }
+  api.addFiles('lib/molecule.styl', 'web');
   api.export('Molecule');
 });
 
