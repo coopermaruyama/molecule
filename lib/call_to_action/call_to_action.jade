@@ -1,10 +1,24 @@
-template(name="CallToAction")
-  am-CallToAction
-    h2(data-bind="text: title")
-    p(data-bind="text:message")
-    if shouldGroupButtons
-      .uk-button-group
-        each buttons
-          +UIButton
+template(name="UICallToAction")
+  div(am-CallToAction mq-CallToAction data-bind="attr: { mq-calltoaction: isFullWidth }")
+    if isFullWidth
+      .uk-container.uk-container-center
+        .uk-clearfix.uknbfc
+          .uk-float-left
+            .uk-vertical-align-middle
+              h2(data-bind="text: title" mq-CallToAction-Headline)
+              p(mq-CallToAction-Message data-bind="text:message")
+          .uk-float-right
+            .uk-vertical-align.uk-vertical-align-middle
+              +UIButton button
     else
-     +UIButton button
+      h2(data-bind="text: title" mq-CallToAction-Headline)
+      p(mq-CallToAction-Message data-bind="text:message")
+      if shouldGroupButtons
+        .uk-button-group
+          each buttons
+            +UIButton
+      else
+        +UIButton button
+
+
+  
